@@ -1,5 +1,5 @@
-## Provo Peaks Elementary Website (Wordpress)
-- [Provo Peaks Elementary Website](https://peaks.provo.edu/)
+## Provost Elementary Website (Wordpress)
+- [Provost Elementary Website](https://provost.provo.edu/)
 
 
 You'll need to get the following directories and Database from Backup:
