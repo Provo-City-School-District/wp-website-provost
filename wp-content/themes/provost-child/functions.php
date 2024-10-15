@@ -1,13 +1,14 @@
 <?php
+$app_version = '1.0.2';
 /*==========================================================================================
 Add stylesheets/javascripts to enqueue
 ============================================================================================*/
 function child_theme_styles()
 {
-	//echo get_stylesheet_uri();
-	//wp_enqueue_style('parent-theme', get_template_directory_uri() .'/style.css');
-	wp_enqueue_script('child_scripts', get_theme_file_uri() . '/assets/js/child-scripts.js', array('jquery'), '1.0.1', true);
-	wp_enqueue_style('child-styles', get_stylesheet_uri(), '', '1.0.1', false);
+	global $app_version;
+	wp_enqueue_style('parent-theme', get_template_directory_uri() . '/style.css', '', $app_version, false);
+	wp_enqueue_script('child_scripts', get_theme_file_uri() . '/assets/js/child-scripts.js', '', $app_version, true);
+	wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', '', $app_version, false);
 }
 add_action('wp_enqueue_scripts', 'child_theme_styles', 20);
 /*==========================================================================================
