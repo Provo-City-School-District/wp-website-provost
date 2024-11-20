@@ -21,22 +21,17 @@ Variables
 ================================================================================================================*/
 
 :root {
-	/* --even-tile-bg-color: #e1e9f4;
-	--odd-tile-bg-color: #cddbee;
-	--primary-color: var(--primary-color);
-	--secondary-color: var(--secondary-color);
-	--accent-color: var(--theme-white)fff; */
+	--primary-color: #6D1A1A;
+	--secondary-color: #DEC9A0;
+	--accent-color: #43310f;
+	--content-text: #02224f;
+	--link-color: #6D1A1A;
+	--link-hover-color: #B6CEF2;
 	--theme-white: #fff;
 	--theme-black: #000;
 	--theme-gray: #ccc;
 	--even-tile-bg-color: #e1e9f4;
 	--odd-tile-bg-color: #cddbee;
-	--primary-color: #264165;
-	--secondary-color: #572C2C;
-	--accent-color: #fff;
-	--link-color: #543D08;
-	--link-hover-color: #B6CEF2;
-	--content-text: #02224f;
 }
 
 /*================================================================================================================
@@ -74,7 +69,7 @@ body {
 }
 
 /*================================================================================================================
-Overall Structeral  Styles
+Overall Structural  Styles
 ================================================================================================================*/
 @media (max-height: 720px) {
 	body {
@@ -309,11 +304,11 @@ Main Menu
 }
 
 #mainMenu>ul>li>a {
-	color: var(--accent-color);
+	color: var(--link-color);
 }
 
 #mainMenu>ul>li>a:hover {
-	color: var(--link-hover-color);
+	color: var(--accent-color);
 }
 
 .mega-menu {
